@@ -294,6 +294,20 @@ html {
   display: block;
   margin-right: 10px;
 }
+.header-area .languages.sticky-flag {
+  position: fixed;
+  top: 35px;
+}
+.header-area .languages.sticky-flag a {
+  color: #222;
+}
+.header-area .languages.sticky-flag .lists {
+  left: 0px;
+}
+.header-area .languages.sticky-flag .lists a {
+  font-size: 14px;
+  color: #fff;
+}
 
 .menu-area.sticky {
   background: #fff;
@@ -409,6 +423,124 @@ html {
   margin-right: 50px;
 }
 
+.mobile-menu-btn {
+  position: absolute;
+  top: 57px;
+  right: 23px;
+}
+.mobile-menu-btn button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.mobile-menu-btn.sticky-btn {
+  position: fixed;
+  top: 15px;
+}
+
+.mobile-nav {
+  transform: translateX(-100%);
+  transition: transform ease-in 0.5s;
+}
+.mobile-nav.active {
+  transform: translateX(0);
+  transition: transform ease-in 0.5s;
+}
+.mobile-nav .mobile-nav-wrapper {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+  padding: 20px 20px;
+  margin-top: 20px;
+  min-height: 100vh;
+  margin-left: 10px;
+}
+.mobile-nav .mobile-nav-wrapper ul li {
+  transition: all ease-in 0.5s;
+}
+.mobile-nav .mobile-nav-wrapper ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(70, 75, 85);
+  display: block;
+  border-bottom: 1px solid rgba(0, 14, 40, 0.1);
+  padding: 15px 0px;
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+.mobile-nav .mobile-nav-wrapper ul li ul {
+  margin-left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+}
+.mobile-nav .mobile-nav-wrapper ul li ul li a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  border-bottom-color: transparent;
+  padding: 0px;
+}
+.mobile-nav .mobile-nav-wrapper ul li:hover a {
+  color: rgb(0, 204, 255);
+}
+.mobile-nav .mobile-nav-wrapper ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  height: fit-content;
+  transition: all ease-in 0.5s;
+}
+.mobile-nav .mobile-nav-wrapper ul li:hover ul li a {
+  color: rgb(70, 75, 85);
+}
+.mobile-nav .mobile-nav-wrapper ul li:hover ul li a:hover {
+  color: rgb(0, 204, 255);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .menu-area .primary-nav ul li a {
+    margin-right: 0px;
+  }
+  .header-area .languages {
+    right: 35px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-area .header-top-area p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .menu-area .logo-area {
+    margin-top: 11px;
+  }
+  .menu-area .logo-area img {
+    width: 180px;
+  }
+  .header-area .languages {
+    top: 62px;
+    right: 65px;
+  }
+  .header-area .languages > a {
+    display: none;
+  }
+  .header-area .languages img {
+    width: 30px;
+  }
+  .menu-area.sticky {
+    background: transparent;
+  }
+}
+@media screen and (min-width: 400px) {
+  .mobile-nav .mobile-nav-wrapper {
+    width: 340px;
+    margin-left: 40px;
+  }
+}
 .bannar-area {
   display: flex;
   justify-content: center;
@@ -454,6 +586,48 @@ html {
   .bannar-video {
     width: auto;
     height: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 76px;
+    line-height: 86px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 66px;
+    line-height: 76px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (min-width: 371px) and (max-width: 480px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .bannar-area h1 {
+    padding: 0px 0px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
