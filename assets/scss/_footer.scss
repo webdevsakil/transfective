@@ -1,0 +1,204 @@
+.footer-area {
+    background: #000E28;
+
+    .subscribe-widget {
+        .widget-title {
+            h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #fff;
+                text-transform: capitalize;
+                font-family: $pop;
+            }
+        }
+
+        .widget-desc {
+            margin-top: 10px;
+
+            p {
+                text-transform: capitalize;
+                color: #dddddd;
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .form-area {
+        position: relative;
+
+        input {
+            width: 100%;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 14px 10px;
+            border-radius: 5px;
+            border: none;
+
+            &::placeholder {
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #cccccc;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: -4px;
+            top: -1px;
+            height: 59px;
+            border: none;
+            width: 85px;
+            background: #8E0BF4;
+            color: #fff;
+            border-radius: 10px;
+            border: 2px solid #000000;
+
+            i {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .social-widget {
+        ul {
+            display: flex;
+
+            li {
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 44px;
+                    width: 44px;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    margin-right: 40px;
+                    border-radius: 50%;
+                    text-decoration: none;
+
+                    &:hover {
+                        background: #9c2af5;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-heading {
+        margin-bottom: 25px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #fff;
+            text-transform: capitalize;
+            font-family: $pop;
+        }
+    }
+
+    .footer-nav {
+
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #DDDDDD;
+                    text-transform: capitalize;
+                    margin-bottom: 16px;
+                    display: block;
+
+                    &:hover {
+                        color: #9c2af5;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.copyright-area {
+    padding-top: 7px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+@media screen and (min-width:992px) {
+    .container.copyright-area {
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .footer-area .footer-heading {
+        margin-top: 30px;
+    }
+
+    .copyright-area {
+        padding-top: 5px;
+        padding-bottom: 1px;
+    }
+
+    .copyright-area p {
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .footer-area .footer-heading {
+        margin-top: 30px;
+    }
+
+    .copyright-area {
+        padding-top: 15px;
+        padding-bottom: 1px;
+    }
+
+    .copyright-area p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .footer-area .footer-heading {
+        margin-top: 0px;
+    }
+
+    .copyright-area {
+
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .footer-area .subscribe-widget.pr-60 {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .copyright-area p {
+        margin-top: 0px;
+    }
+}
