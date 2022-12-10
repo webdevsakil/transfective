@@ -192,10 +192,16 @@ label {
   background: #8E0BF4;
 }
 
-html {
-  scroll-behavior: smooth;
+@media screen and (min-width: 361px) and (max-width: 400px) {
+  .container {
+    padding: 0px 15px !important;
+  }
 }
-
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 0px 10px !important;
+  }
+}
 .theme-btn {
   border: none;
   background: transparent;
@@ -421,6 +427,25 @@ html {
   text-transform: capitalize;
   display: block;
   margin-right: 50px;
+  position: relative;
+  padding: 5px 10px;
+}
+.header-right-area .link a::before {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  top: 50%;
+  right: -50%;
+  transform: translateY(-50%);
+  content: "";
+  transition: all ease-in 0.4s;
+}
+.header-right-area .link a:hover::before {
+  border-color: #fff;
+  right: 0%;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .mobile-menu-btn {
@@ -455,11 +480,24 @@ html {
   border-top-right-radius: 0px;
   padding: 20px 20px;
   margin-top: 20px;
-  min-height: 100vh;
+  padding-bottom: 50px;
   margin-left: 10px;
 }
 .mobile-nav .mobile-nav-wrapper ul li {
   transition: all ease-in 0.5s;
+}
+.mobile-nav .mobile-nav-wrapper ul li.has-children {
+  position: relative;
+}
+.mobile-nav .mobile-nav-wrapper ul li.has-children::before {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  content: "+";
+  font-size: 32px;
+}
+.mobile-nav .mobile-nav-wrapper ul li.has-children.active::before {
+  content: "-";
 }
 .mobile-nav .mobile-nav-wrapper ul li a {
   text-decoration: none;
@@ -486,19 +524,19 @@ html {
   border-bottom-color: transparent;
   padding: 0px;
 }
-.mobile-nav .mobile-nav-wrapper ul li:hover a {
+.mobile-nav .mobile-nav-wrapper ul li.has-children.active a {
   color: rgb(0, 204, 255);
 }
-.mobile-nav .mobile-nav-wrapper ul li:hover ul {
+.mobile-nav .mobile-nav-wrapper ul li.has-children.active ul {
   opacity: 1;
   visibility: visible;
   height: fit-content;
   transition: all ease-in 0.5s;
 }
-.mobile-nav .mobile-nav-wrapper ul li:hover ul li a {
+.mobile-nav .mobile-nav-wrapper ul li.has-children.active ul li a {
   color: rgb(70, 75, 85);
 }
-.mobile-nav .mobile-nav-wrapper ul li:hover ul li a:hover {
+.mobile-nav .mobile-nav-wrapper ul li.has-children.active ul li a:hover {
   color: rgb(0, 204, 255);
 }
 
@@ -535,10 +573,14 @@ html {
     background: transparent;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 401px) {
   .mobile-nav .mobile-nav-wrapper {
     width: 340px;
-    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mobile-nav .mobile-nav-wrapper {
+    width: 100%;
   }
 }
 .bannar-area {
