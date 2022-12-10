@@ -20,10 +20,12 @@
             margin-left: 5px;
         }
     }
+
 }
 
 .menu-area {
-    padding-top: 20px;
+
+    padding: 20px 0px;
 
     .logo-area {
         display: block;
@@ -38,15 +40,95 @@
             display: flex;
             align-items: center;
 
+
             li {
+
+
                 a {
                     text-decoration: none;
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 21px;
-                    color: rgba(255, 255, 255, 1);
+                    color: rgb(255, 255, 255);
                     text-transform: capitalize;
-                    margin-right: 80px;
+                    margin-right: 50px;
+                    display: block;
+                    border-radius: 20px;
+                    padding: 5px 20px;
+                    min-height: 80px;
+                    line-height: 80px;
+                    position: relative;
+
+
+                    &::before {
+                        position: absolute;
+                        border: 2px solid transparent;
+                        border-radius: 20px;
+                        height: 40px;
+                        width: 100%;
+                        top: 50%;
+                        left: -50%;
+                        transform: translateY(-50%);
+                        content: "";
+                        transition: all ease-in 0.4s;
+                    }
+                    &:hover{
+                        &::before{
+                            border-color: #fff;
+                            left: 0%;
+                        }
+                    }
+                }
+
+                position: relative;
+
+                ul {
+                    position: absolute;
+                    top: 100%;
+                    flex-direction: column;
+                    align-items: stretch;
+                    min-width: 350px;
+                    background: #fff;
+                    padding: 20px 30px;
+                    border-radius: 25px;
+                    border-top-left-radius: 0px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all ease-in 0.5s;
+                    margin-top: 0px;
+
+                    li {
+                        min-height: fit-content;
+
+                        a {
+                            font-weight: 500;
+                            font-size: 18px;
+                            display: block;
+                            line-height: 46px;
+                            color: rgba(70, 75, 85, 1);
+                            border-bottom: 1px solid rgba(0, 14, 40, 0.1);
+                            text-align: left;
+                            width: 100%;
+                            min-height: fit-content;
+                            border-radius: 0px;
+                            padding: 0px;
+
+                            &:hover {
+                                color: rgba(0, 204, 255, 1);
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
                 }
             }
         }
