@@ -15,12 +15,17 @@
 6. Footer
 */
 
-@import 'custom-font';
-@import 'variable';
+
 @import 'common';
 @import 'button';
-@import './loader';
+
 
 
 @import 'header';
 @import 'footer';
+
+// Pages
+
+// Home Page
+
+@import './Pages/Home/Bannar';
