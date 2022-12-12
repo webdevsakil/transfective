@@ -302,7 +302,7 @@ label {
 }
 .header-area .languages.sticky-flag {
   position: fixed;
-  top: 35px;
+  top: 20px;
 }
 .header-area .languages.sticky-flag a {
   color: #222;
