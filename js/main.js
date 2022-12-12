@@ -16,9 +16,5 @@ mobileMenuBtn.addEventListener('click', function () {
     mobileMenu.classList.toggle('active');
 })
 
-const hasChildren = document.querySelectorAll('.has-children');
-for (let item of hasChildren) {
-    item.addEventListener('click', function (e) {
-        item.classList.toggle('active');
-    })
-}
+
+
