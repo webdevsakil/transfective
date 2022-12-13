@@ -16,6 +16,7 @@
 */
 
 
+@import './variable';
 @import 'common';
 @import 'button';
 
@@ -29,3 +30,5 @@
 // Home Page
 
 @import './Pages/Home/Bannar';
+@import './Pages/Home/technologyArea';
+@import './Pages/Home/brands';

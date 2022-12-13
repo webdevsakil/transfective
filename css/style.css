@@ -94,14 +94,19 @@ h1 {
 }
 
 h2 {
-  font-size: 76px;
-  line-height: 86px;
-  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: rgb(0, 14, 40);
 }
 
 h3 {
-  font-size: 52px;
-  line-height: 62px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(0, 14, 40, 0.9);
 }
 
 h4 {
@@ -172,24 +177,8 @@ label {
   opacity: 1;
 }
 
-.theme-bg {
-  background-color: #F5FAFF;
-}
-
-.theme-bg-primary {
-  background: #00CCFF;
-}
-
-.theme-bg-secondary {
-  background: #F2FCFF;
-}
-
-.theme-bg-dark {
-  background-color: #133460;
-}
-
-.theme-bg-purple {
-  background: #8E0BF4;
+.theme-bg-blue {
+  background-color: rgb(255, 217, 100);
 }
 
 @media screen and (min-width: 361px) and (max-width: 400px) {
@@ -327,6 +316,10 @@ label {
 }
 .menu-area.sticky .primary-nav ul li a {
   color: #222;
+}
+.menu-area.sticky .primary-nav ul li a:hover::before {
+  border-color: #00ccff !important;
+  background: rgba(0, 0, 255, 0.0352941176);
 }
 .menu-area.sticky .header-right-area .link a {
   color: #222;
@@ -586,6 +579,11 @@ label {
     width: 340px;
   }
 }
+@media screen and (min-width: 992px) {
+  .header-area .languages.sticky-flag {
+    top: 37px;
+  }
+}
 .bannar-area {
   display: flex;
   justify-content: center;
@@ -674,6 +672,77 @@ label {
     font-size: 30px;
     line-height: 40px;
   }
+}
+#technology-area .section-heading {
+  padding: 0px 300px;
+}
+#technology-area .slider-wrapper {
+  min-height: 400px;
+}
+#technology-area .slider-wrapper .slide {
+  margin: 0px 10px;
+  width: 315px;
+  padding: 10px;
+}
+#technology-area .slider-wrapper .slide .slide-inner {
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 10px rgba(221, 221, 221, 0.487);
+  padding: 40px 28px;
+  min-height: 250px;
+}
+#technology-area .slider-wrapper .slide .slide-inner .icon-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#technology-area .slider-wrapper .slide .slide-inner .icon-area h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+#technology-area .slider-wrapper .slide .slide-inner .content {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  transition: all linear 0.5s;
+}
+#technology-area .slider-wrapper .slide .slide-inner .content p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(0, 14, 40, 0.8);
+}
+#technology-area .slider-wrapper .slide .slide-inner .content a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 14, 40, 0.9);
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+}
+#technology-area .slider-wrapper .slide:hover {
+  padding: 0px 10px;
+  transition: all linear 0.5s;
+}
+#technology-area .slider-wrapper .slide:hover .slide-inner {
+  box-shadow: none;
+  padding: 0px 28px;
+}
+#technology-area .slider-wrapper .slide:hover .slide-inner .content {
+  transition: all linear 0.5s;
+  height: fit-content;
+  visibility: visible;
+  opacity: 1;
+}
+
+#brands .brands-slider a {
+  display: block;
+  margin: 0px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

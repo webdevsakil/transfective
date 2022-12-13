@@ -2,11 +2,44 @@
 
 	jQuery(document).ready(function () {
 
-		// core value icon
+	
+		// marquee slider
+		$('.marquee-slider').slick({
+			speed: 5000,
+			autoplay: true,
+			autoplaySpeed: 0,
+			centerMode: false,
+			cssEase: 'linear',
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			variableWidth: true,
+			infinite: true,
+			initialSlide: 1,
+			arrows: false,
+			buttons: false,
+		
+		});
+		$('.brands-slider').slick({
+			speed: 5000,
+			autoplay: true,
+			autoplaySpeed: 0,
+			centerMode: false,
+			cssEase: 'linear',
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			variableWidth: true,
+			infinite: true,
+			initialSlide: 1,
+			arrows: false,
+			buttons: false,
+			rtl: true
+		
+		});
 
 	
 
 		
+		// deactive
 
 		// contact slider
 		$('#contact-slider-mobile-one').slick({
@@ -143,22 +176,7 @@
 
 			]
 		});
-		// marquee slider
-		$('.marquee-slider').slick({
-			speed: 3000,
-			autoplay: true,
-			autoplaySpeed: 0,
-			centerMode: true,
-			cssEase: 'linear',
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			variableWidth: true,
-			infinite: true,
-			initialSlide: 1,
-			arrows: false,
-			buttons: false
-		});
-
+	
 
 
 	

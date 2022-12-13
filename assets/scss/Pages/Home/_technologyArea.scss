@@ -1,0 +1,81 @@
+#technology-area {
+    .section-heading {
+        padding: 0px 300px;
+    }
+
+    .slider-wrapper {
+        min-height: 400px;
+        .slide {
+            margin: 0px 10px;
+            width: 315px;
+
+            padding: 10px;
+
+            .slide-inner {
+                border-radius: 15px;
+                box-shadow: 0 2px 5px 10px rgba(221, 221, 221, 0.487);
+                padding: 40px 28px;
+                min-height: 250px;
+
+                .icon-area {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3 {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                }
+
+                .content {
+                    height: 0px;
+                    visibility: hidden;
+                    opacity: 0;
+                    margin-top: 30px;
+                    transition: all linear 0.5s;
+                    
+                    p {
+                        text-align: center;
+                        font-family: $raleway;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: rgba(0, 14, 40, 0.8);
+                    }
+
+                    a {
+                        font-family: $raleway;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: rgba(0, 14, 40, 0.9);
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+
+            &:hover {
+                padding: 0px 10px;
+                transition: all linear 0.5s;
+
+                .slide-inner {
+                    box-shadow: none;
+                    padding: 0px 28px;
+
+                    .content {
+                        transition: all linear 0.5s;
+                        height: fit-content;
+                        visibility: visible;
+                        opacity: 1;
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}

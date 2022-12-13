@@ -80,14 +80,19 @@ h1 {
 }
 
 h2 {
-  font-size: 76px;
-  line-height: 86px;
-  font-weight: 500;
+  font-family: $raleway;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: rgba(0, 14, 40, 1);
 }
 
 h3 {
-  font-size: 52px;
-  line-height: 62px;
+  font-family: $raleway;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(0, 14, 40, 0.9);
 }
 
 h4 {
@@ -158,25 +163,10 @@ label {
   opacity: 1;
 }
 
-.theme-bg {
-  background-color: #F5FAFF;
+.theme-bg-blue {
+  background-color: $blue;
 }
 
-.theme-bg-primary {
-  background: #00CCFF;
-}
-
-.theme-bg-secondary {
-  background: #F2FCFF;
-}
-
-.theme-bg-dark {
-  background-color: #133460;
-}
-
-.theme-bg-purple {
-  background: #8E0BF4;
-}
 
 
 

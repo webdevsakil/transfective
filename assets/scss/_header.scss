@@ -115,6 +115,12 @@
                 li {
                     a {
                         color: #222;
+                        &:hover{
+                            &::before{
+                            border-color: #00ccff !important;
+                             background: #0000ff09;
+                        }
+                    }
                     }
                 }
             }
@@ -467,5 +473,12 @@
 @media screen and (min-width:401px) {
     .mobile-nav .mobile-nav-wrapper {
         width: 340px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header-area .languages.sticky-flag {
+   
+        top: 37px;
     }
 }
