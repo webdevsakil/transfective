@@ -96,7 +96,6 @@
 
 .active-slide-on-mouse {
     transition: all linear 0.5s;
-
     animation-name: fadeIn;
     animation-duration: 0.5s;
 
@@ -132,5 +131,67 @@
 @media screen and (max-width:768px) {
     #technology-area .section-heading {
         padding: 0px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #technology-area .slider-wrapper .slide .slide-inner .icon-area img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #technology-area h3 {
+
+        font-size: 18px;
+        line-height: 26px;
+
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner {
+        border-radius: 10px;
+        padding: 20px 10px;
+        min-height: 196px;
+    }
+
+    #technology-area .slider-wrapper .slide {
+        margin: 0px 5px;
+        width: 196px;
+        padding: 10px;
+        position: relative;
+
+        .content {
+            position: absolute;
+        }
+    }
+
+    #technology-area .slider-wrapper .slide:hover {
+        width: 250px;
+    }
+
+    .prev-slide {
+        transform: translateX(0px);
+
+    }
+
+    .next-slide {
+        transform: translateX(0px);
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner .content {
+        margin-top: 10px;
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner .content p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 0px;
+    }
+
+    #technology-area .slider-wrapper {
+        min-height: 245px;
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner .icon-area {
+        padding-top: 20px;
     }
 }
