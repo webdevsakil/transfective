@@ -5,6 +5,7 @@
 
     .slider-wrapper {
         min-height: 400px;
+
         .slide {
             margin: 0px 10px;
             width: 315px;
@@ -35,7 +36,7 @@
                     opacity: 0;
                     margin-top: 30px;
                     transition: all linear 0.5s;
-                    
+
                     p {
                         text-align: center;
                         font-family: $raleway;
@@ -71,11 +72,27 @@
                         height: fit-content;
                         visibility: visible;
                         opacity: 1;
-                        
+
                     }
                 }
             }
 
         }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    #technology-area .section-heading {
+        padding: 0px 100px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    #technology-area .section-heading {
+        padding: 0px 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    #technology-area .section-heading {
+        padding: 0px 0px;
     }
 }
