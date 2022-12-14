@@ -62,7 +62,7 @@
             &:hover {
                 padding: 0px 10px;
                 transition: all linear 0.5s;
-                width: 600px;
+                width: 400px;
 
                 .slide-inner {
                     box-shadow: none;
@@ -85,17 +85,17 @@
 }
 
 .prev-slide {
-    transform: translateX(-200px);
-    transition: all linear 1s;
+    transform: translateX(-100px);
+    transition: all linear 0.5s;
 }
 
 .next-slide {
-    transform: translateX(200px);
-    transition: all linear 1s;
+    transform: translateX(100px);
+    transition: all linear 0.5s;
 }
 
 .active-slide-on-mouse {
-    transition: all linear 1s;
+    transition: all linear 0.5s;
 
     animation-name: fadeIn;
     animation-duration: 0.5s;
