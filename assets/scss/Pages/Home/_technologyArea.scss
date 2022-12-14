@@ -134,6 +134,50 @@
     }
 }
 
+@media screen and (min-width:481px) and (max-width:575px) {
+    #technology-area .slider-wrapper {
+        min-height: 300px;
+    }
+
+    #technology-area .slider-wrapper .slide {
+        width: 240px;
+        padding: 10px;
+        position: relative;
+
+        .content {
+            position: absolute;
+        }
+    }
+
+    #technology-area h3 {
+
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    #technology-area .slider-wrapper .slide:hover {
+        width: 300px;
+    }
+
+    .prev-slide {
+        transform: translateX(20px);
+
+    }
+
+    .next-slide {
+        transform: translateX(20px);
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner .content p {
+        margin-bottom: 0px;
+    }
+
+    #technology-area .slider-wrapper .slide .slide-inner .content {
+        margin-top: 5px;
+    }
+}
+
 @media screen and (max-width:480px) {
     #technology-area .slider-wrapper .slide .slide-inner .icon-area img {
         width: 50px;
