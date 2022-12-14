@@ -4,13 +4,13 @@
 
 	
 		// marquee slider
-		$('.marquee-slider').slick({
+		$('.technolgy-slider-wrapper').slick({
 			speed: 5000,
 			autoplay: true,
-			autoplaySpeed: 0,
-			centerMode: false,
-			cssEase: 'linear',
-			slidesToShow: 1,
+			autoplaySpeed: 3000,
+			centerMode: true,
+			// cssEase: 'linear',
+			slidesToShow: 3,
 			slidesToScroll: 1,
 			variableWidth: true,
 			infinite: true,

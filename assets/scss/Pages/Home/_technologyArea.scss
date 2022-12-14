@@ -14,7 +14,7 @@
 
             .slide-inner {
                 border-radius: 15px;
-                box-shadow: 0 2px 5px 10px rgba(221, 221, 221, 0.487);
+                box-shadow: 0 2px 5px 1px rgba(0, 14, 40, 0.08);
                 padding: 40px 28px;
                 min-height: 250px;
 
@@ -62,6 +62,7 @@
             &:hover {
                 padding: 0px 10px;
                 transition: all linear 0.5s;
+                width: 600px;
 
                 .slide-inner {
                     box-shadow: none;
@@ -75,9 +76,11 @@
 
                     }
                 }
+               
             }
 
         }
+        
     }
 }
 
@@ -86,11 +89,13 @@
         padding: 0px 100px;
     }
 }
+
 @media screen and (min-width:768px) and (max-width:991px) {
     #technology-area .section-heading {
         padding: 0px 100px;
     }
 }
+
 @media screen and (max-width:768px) {
     #technology-area .section-heading {
         padding: 0px 0px;

@@ -52,3 +52,22 @@ for (let i = 0; i < hasChildrenSpan.length; i++) {
         }
     })
 }
+
+const technolgySliderWrapper = document.querySelector('.technolgy-slider-wrapper');
+let slides = technolgySliderWrapper.querySelectorAll('.slide');
+
+for (let i = 0; i < slides.length; i++) {
+    slides[i].addEventListener('mouseenter', function (e) {
+        console.log(e.target);
+        e.target.classList.add('active-slide-on-mouse');
+        slides[i - 1].classList.add('prev-slide-on-mouse')
+        slides[i + 1].classList.add('next-slide-on-mouse')
+    })
+    slides[i].addEventListener('mouseleave', function (e) {
+        console.log(e.target);
+        e.target.classList.remove('active-slide-on-mouse');
+        slides[i + 1].classList.remove('next-slide-on-mouse');
+        slides[i - 1].classList.remove('prev-slide-on-mouse')
+    })
+}
+
