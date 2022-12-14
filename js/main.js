@@ -1,4 +1,4 @@
-
+gsap.registerPlugin(ScrollTrigger);
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header-area .menu-area');
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -56,18 +56,49 @@ for (let i = 0; i < hasChildrenSpan.length; i++) {
 const technolgySliderWrapper = document.querySelector('.technolgy-slider-wrapper');
 let slides = technolgySliderWrapper.querySelectorAll('.slide');
 
-for (let i = 0; i < slides.length; i++) {
-    slides[i].addEventListener('mouseenter', function (e) {
-        console.log(e.target);
-        e.target.classList.add('active-slide-on-mouse');
-        slides[i - 1].classList.add('prev-slide-on-mouse')
-        slides[i + 1].classList.add('next-slide-on-mouse')
-    })
-    slides[i].addEventListener('mouseleave', function (e) {
-        console.log(e.target);
-        e.target.classList.remove('active-slide-on-mouse');
-        slides[i + 1].classList.remove('next-slide-on-mouse');
-        slides[i - 1].classList.remove('prev-slide-on-mouse')
-    })
+const previousSiblings = (elem, add) => {
+
+    let siblings = [];
+
+    while (elem = elem.previousElementSibling) {
+        if (add) {
+            elem.classList.add('prev-slide');
+        } else {
+            elem.classList.remove('prev-slide');
+        }
+        siblings.push(elem);
+    }
+    return siblings;
+};
+
+const nextElementSiblings = (elem, add) => {
+    let siblings = [];
+    while (elem = elem.nextElementSibling) {
+        if (add) {
+            elem.classList.add('next-slide');
+        } else {
+            elem.classList.remove('next-slide');
+        }
+        siblings.push(elem);
+    }
+    return siblings;
 }
 
+for (let i = 0; i < slides.length; i++) {
+    slides[i].addEventListener('mouseenter', function (e) {
+        e.target.classList.add('active-slide-on-mouse');
+        previousSiblings(e.target, true);
+        nextElementSiblings(e.target, true)
+    })
+    slides[i].addEventListener('mouseleave', function (e) {
+     
+
+        setTimeout(() => {
+            e.target.classList.remove('active-slide-on-mouse');
+         
+        }, 20);
+
+        previousSiblings(e.target, false);
+        nextElementSiblings(e.target, false)
+    })
+}

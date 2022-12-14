@@ -746,7 +746,7 @@ label {
   padding: 0px 300px;
 }
 #technology-area .slider-wrapper {
-  min-height: 400px;
+  min-height: 450px;
 }
 #technology-area .slider-wrapper .slide {
   margin: 0px 10px;
@@ -804,12 +804,40 @@ label {
   padding: 0px 28px;
 }
 #technology-area .slider-wrapper .slide:hover .slide-inner .content {
-  transition: all linear 0.5s;
+  transition: all linear 2s;
   height: fit-content;
   visibility: visible;
   opacity: 1;
 }
 
+.prev-slide {
+  transform: translateX(-200px);
+  transition: all linear 1s;
+}
+
+.next-slide {
+  transform: translateX(200px);
+  transition: all linear 1s;
+}
+
+.active-slide-on-mouse {
+  transition: all linear 1s;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.active-slide-on-mouse .slide-inner {
+  box-shadow: none;
+  transition: all ease 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   #technology-area .section-heading {
     padding: 0px 100px;
@@ -824,6 +852,9 @@ label {
   #technology-area .section-heading {
     padding: 0px 0px;
   }
+}
+#brands .brands-slider {
+  display: flex;
 }
 #brands .brands-slider a {
   display: block;

@@ -2,14 +2,13 @@
 
 	jQuery(document).ready(function () {
 
-	
+
 		// marquee slider
 		$('.technolgy-slider-wrapper').slick({
-			speed: 5000,
+			speed: 10000,
 			autoplay: true,
-			autoplaySpeed: 3000,
-			centerMode: true,
-			// cssEase: 'linear',
+			 autoplaySpeed: 3000,
+			cssEase: 'linear',
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			variableWidth: true,
@@ -17,9 +16,9 @@
 			initialSlide: 1,
 			arrows: false,
 			buttons: false,
-		
+			centerMode: true,
 		});
-		$('.brands-slider').slick({
+		$('').slick({
 			speed: 5000,
 			autoplay: true,
 			autoplaySpeed: 0,
@@ -33,10 +32,10 @@
 			arrows: false,
 			buttons: false,
 			rtl: true
-		
+
 		});
 
-	
+
 
 	});
 
