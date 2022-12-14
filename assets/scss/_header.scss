@@ -79,18 +79,32 @@
 
         &.sticky-flag {
             position: fixed;
-            top: 20px;
+            top: 0px;
+
+            .language-trigger {
+                min-height: 80px;
+                line-height: 80px;
+            }
 
             a {
                 color: #222;
             }
 
             .lists {
-                left: 0px;
+                width: fit-content;
+                padding: 10px 0px;
+                padding-left: 10px;
+                left: -20px;
+                background: #fff;
+                filter: drop-shadow(0px 0px 10px #ddd);
+                border: 10px;
 
                 a {
                     font-size: 14px;
-                    color: #fff;
+                    color: #222;
+                    padding: 10px 0px;
+                    margin-bottom: 0px;
+                    border-bottom: 1px solid rgba(34, 34, 34, 0.054);
                 }
             }
         }
@@ -115,23 +129,29 @@
                 li {
                     a {
                         color: #222;
-                        &:hover{
-                            &::before{
-                            border-color: #00ccff !important;
-                             background: #0000ff09;
+
+                        &:hover {
+                            &::before {
+                                border-color: #00ccff !important;
+                                background: #0000ff09;
+                            }
                         }
-                    }
                     }
                 }
             }
         }
+
 
         .header-right-area {
             .link {
                 a {
                     color: #222;
 
-
+                    &:hover {
+                        &::before {
+                            border-color: #00ccff;
+                        }
+                    }
                 }
             }
         }
@@ -319,6 +339,11 @@
         transition: transform ease-in 0.5s;
     }
 
+    &.sticky-mobile-menu {
+        position: fixed;
+        top: 42px;
+    }
+
     .mobile-nav-wrapper {
         background-color: #fff;
         border-radius: 25px;
@@ -326,26 +351,18 @@
         padding: 20px 20px;
         margin-top: 20px;
         padding-bottom: 50px;
-        margin-left: 10px;
         width: calc(100vw - 36px);
 
         ul {
             li {
                 &.has-children {
                     position: relative;
-
-                    &::before {
+                    span{
                         position: absolute;
-                        right: 30px;
-                        top: 5px;
-                        content: "+";
-                        font-size: 32px;
-                    }
-
-                    &.active {
-                        &::before {
-                            content: "-";
-                        }
+                        right: 10px;
+                        font-size: 30px;
+                        top: 0px;
+                        cursor: pointer;
                     }
                 }
 
@@ -460,17 +477,58 @@
         }
     }
 
-    .menu-area.sticky {
-        background: transparent;
-    }
+
 
     .header-area .languages .lists {
         left: -65px;
     }
 
+    .header-area .languages.sticky-flag {
+        position: fixed;
+        top: -12px;
+    }
+
+    .mobile-menu-btn.sticky-btn {
+        z-index: 988;
+        top: 14px;
+
+        button {
+            color: #222 !important;
+        }
+    }
+
+    .menu-area.sticky {
+        padding: 15px 0px;
+
+        .logo-area {
+            margin-top: 0px;
+        }
+    }
+
+    .header-area .languages.sticky-flag .lists {
+
+        left: -8px;
+
+    }
+
+    .header-area .languages .lists {
+        left: 2px;
+    }
+
+    .header-area .languages.sticky-flag .language-trigger {
+        min-height: 41px;
+        line-height: 59px;
+        padding-top: 13px;
+    }
+
+    .menu-area .logo-area img {
+        width: 160px;
+        margin-top: 5px;
+    }
+
 }
 
-@media screen and (min-width:401px) {
+@media screen and (min-width:500px) {
     .mobile-nav .mobile-nav-wrapper {
         width: 340px;
     }
@@ -478,7 +536,7 @@
 
 @media screen and (min-width:992px) {
     .header-area .languages.sticky-flag {
-   
-        top: 37px;
+        top: 13px;
     }
+
 }
