@@ -815,6 +815,16 @@ label {
   text-align: center;
 }
 
+.brands-slider-area .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

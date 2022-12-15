@@ -1,7 +1,7 @@
 
 
-
-var mySwiper = new Swiper(".technolgy-slider-wrapper", {
+const technolgySliderWrapper = document.querySelector('.technolgy-slider-wrapper');
+var technolgySlider = new Swiper(technolgySliderWrapper, {
     spaceBetween: 0,
     slidesPerView: 5,
     centeredSlides: true,
@@ -9,9 +9,26 @@ var mySwiper = new Swiper(".technolgy-slider-wrapper", {
     loop: true,
     loopAdditionalSlides: 30,
     autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
+        delay: 3000,
+        disableOnInteraction: false,
     },
+});
+
+
+
+let SwiperBottom = new Swiper('.brands-slider-area', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+        delay: 0,
+        reverseDirection: true
+    },
+    loop: true,
+    loopedSlides: 4,
+    slidesPerView: 'auto',
+    allowTouchMove: true,
+    disableOnInteraction: true
 });
 
 
@@ -21,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             scrollTrigger: {
                 trigger: '.brands-slider',
-                markers: true
+                start:'top 90%'
+              
             },
             y: 100, opacity: 0, stagger: 0.1
         }
