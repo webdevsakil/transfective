@@ -748,9 +748,29 @@ label {
 #technology-area .slider-wrapper {
   min-height: 450px;
 }
+#technology-area .slider-wrapper:hover .swiper-slide {
+  transition: all ease 0.5s;
+}
+#technology-area .slider-wrapper:hover .swiper-slide.swiper-slide-prev {
+  transition: all ease 0.5s;
+  transform: translateX(-60px) scaleX(0.9);
+}
+#technology-area .slider-wrapper .swiper-slide.swiper-slide-active:hover {
+  width: 500px !important;
+  margin-left: -80px;
+  transition: all ease 0.5s;
+}
+#technology-area .slider-wrapper .swiper-slide.swiper-slide-active:hover .slide .slide-inner {
+  box-shadow: none;
+}
+#technology-area .slider-wrapper .swiper-slide.swiper-slide-active:hover .slide .content {
+  transition: all linear 0.5s;
+  height: fit-content;
+  visibility: visible;
+  opacity: 1;
+}
 #technology-area .slider-wrapper .slide {
   margin: 0px 10px;
-  width: 315px;
   padding: 10px;
 }
 #technology-area .slider-wrapper .slide .slide-inner {
@@ -773,8 +793,8 @@ label {
   height: 0px;
   visibility: hidden;
   opacity: 0;
-  margin-top: 30px;
-  transition: all linear 0.5s;
+  margin-top: 10px;
+  transition: all linear 0.2s;
 }
 #technology-area .slider-wrapper .slide .slide-inner .content p {
   text-align: center;
@@ -793,41 +813,6 @@ label {
   text-transform: capitalize;
   display: block;
   text-align: center;
-}
-#technology-area .slider-wrapper .slide:hover {
-  padding: 0px 10px;
-  transition: all linear 0.5s;
-  width: 400px;
-}
-#technology-area .slider-wrapper .slide:hover .slide-inner {
-  box-shadow: none;
-  padding: 0px 28px;
-}
-#technology-area .slider-wrapper .slide:hover .slide-inner .content {
-  transition: all linear 2s;
-  height: fit-content;
-  visibility: visible;
-  opacity: 1;
-}
-
-.prev-slide {
-  transform: translateX(-50px);
-  transition: all linear 0.5s;
-}
-
-.next-slide {
-  transform: translateX(50px);
-  transition: all linear 0.5s;
-}
-
-.active-slide-on-mouse {
-  transition: all linear 0.5s;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-}
-.active-slide-on-mouse .slide-inner {
-  box-shadow: none;
-  transition: all ease 0.5s;
 }
 
 @keyframes fadeIn {

@@ -53,8 +53,7 @@ for (let i = 0; i < hasChildrenSpan.length; i++) {
     })
 }
 
-const technolgySliderWrapper = document.querySelector('.technolgy-slider-wrapper');
-let slides = technolgySliderWrapper.querySelectorAll('.slide');
+
 
 const previousSiblings = (elem, add) => {
 
@@ -84,21 +83,10 @@ const nextElementSiblings = (elem, add) => {
     return siblings;
 }
 
-for (let i = 0; i < slides.length; i++) {
-    slides[i].addEventListener('mouseenter', function (e) {
-        e.target.classList.add('active-slide-on-mouse');
-        previousSiblings(e.target, true);
-        nextElementSiblings(e.target, true)
-    })
-    slides[i].addEventListener('mouseleave', function (e) {
-     
 
-        setTimeout(() => {
-            e.target.classList.remove('active-slide-on-mouse');
-         
-        }, 20);
 
-        previousSiblings(e.target, false);
-        nextElementSiblings(e.target, false)
-    })
-}
+
+
+
+
+
