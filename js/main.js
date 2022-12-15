@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header-area .menu-area');
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');

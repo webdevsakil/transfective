@@ -811,12 +811,12 @@ label {
 }
 
 .prev-slide {
-  transform: translateX(-100px);
+  transform: translateX(-50px);
   transition: all linear 0.5s;
 }
 
 .next-slide {
-  transform: translateX(100px);
+  transform: translateX(50px);
   transition: all linear 0.5s;
 }
 
@@ -969,7 +969,7 @@ label {
 }
 #brands .brands-slider a {
   display: block;
-  margin: 0px 15px;
+  margin: 0px 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
