@@ -40,7 +40,7 @@ var technolgySlider = new Swiper(technolgySliderWrapper, {
 });
 
 var technolgySlider = new Swiper(".technology-slider-two", {
-    spaceBetween: 0,
+    spaceBetween: 20,
     slidesPerView: 5,
     centeredSlides: true,
     roundLengths: true,
@@ -49,6 +49,7 @@ var technolgySlider = new Swiper(".technology-slider-two", {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
+        pauseOnMouseEnter:true
     },
     breakpoints: {
         100: {
