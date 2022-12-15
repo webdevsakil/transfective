@@ -333,9 +333,8 @@ label {
   padding: 10px 0px;
   padding-left: 10px;
   left: -20px;
-  background: #fff;
-  filter: drop-shadow(0px 0px 10px #ddd);
-  border: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 .header-area .languages.sticky-flag .lists a {
   font-size: 14px;
@@ -368,11 +367,20 @@ label {
 .menu-area.sticky .header-right-area .link a:hover::before {
   border-color: #00ccff;
 }
+.menu-area.sticky .logo-area img {
+  display: none;
+}
+.menu-area.sticky .logo-area .transparent-logo {
+  display: block;
+}
 .menu-area .logo-area {
   display: block;
 }
 .menu-area .logo-area img {
   width: 240px;
+}
+.menu-area .logo-area .transparent-logo {
+  display: none;
 }
 .menu-area .primary-nav ul {
   display: flex;

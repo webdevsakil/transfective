@@ -95,9 +95,9 @@
                 padding: 10px 0px;
                 padding-left: 10px;
                 left: -20px;
-                background: #fff;
-                filter: drop-shadow(0px 0px 10px #ddd);
-                border: 10px;
+                background: rgb(255, 255, 255);
+                
+                border-radius: 10px;
 
                 a {
                     font-size: 14px;
@@ -156,6 +156,15 @@
             }
         }
 
+        .logo-area {
+            img{
+                display: none;
+            }
+            .transparent-logo {
+                display: block;
+            }
+        }
+
     }
 
     .logo-area {
@@ -163,6 +172,10 @@
 
         img {
             width: 240px;
+        }
+
+        .transparent-logo {
+            display: none;
         }
     }
 
@@ -357,7 +370,8 @@
             li {
                 &.has-children {
                     position: relative;
-                    span{
+
+                    span {
                         position: absolute;
                         right: 10px;
                         font-size: 30px;
