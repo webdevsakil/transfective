@@ -1,10 +1,36 @@
-#brands{
+#brands {
 
-    .brands-slider{
+    .brands-slider {
         display: flex;
-        a{
+
+        a {
             display: block;
             margin: 0px 25px;
+        }
+    }
+}
+
+.brands-slider-area .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width:576px) {
+    #brands {
+        .brands-slider {
+
+            a {
+
+                margin: 0px 5px;
+
+                img {
+                    transform: scale(0.9);
+                }
+            }
         }
     }
 }
