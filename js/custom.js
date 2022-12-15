@@ -13,6 +13,7 @@ var technolgySlider = new Swiper(technolgySliderWrapper, {
         delay: 3000,
         disableOnInteraction: false,
     },
+    
     breakpoints: {
         100: {
             slidesPerView: 1,
@@ -34,7 +35,8 @@ var technolgySlider = new Swiper(technolgySliderWrapper, {
             slidesPerView: 5
         }
 
-    },
+    }
+   
 });
 
 var technolgySlider = new Swiper(".technology-slider-two", {
@@ -92,6 +94,7 @@ let SwiperBottom = new Swiper('.brands-slider-area', {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
     gsap.from(".brands-slider a",
@@ -104,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             y: 100, opacity: 0, stagger: 0.1
         }
     )
+   
 
 })
 

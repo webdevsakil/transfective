@@ -930,10 +930,11 @@ label {
   }
 }
 #technology-area .technology-slider-two {
-  min-height: 450px;
+  min-height: 400px;
 }
 #technology-area .technology-slider-two .swiper-slide:hover {
   width: 400px !important;
+  padding: 0px 20px;
   margin-left: 0px;
   transition: all ease 0.5s;
 }
