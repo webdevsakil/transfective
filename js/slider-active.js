@@ -23,7 +23,7 @@
 			speed: 5000,
 			autoplay: true,
 			autoplaySpeed: 0,
-			centerMode: false,
+			centerMode: true,
 			cssEase: 'linear',
 			slidesToShow: 1,
 			slidesToScroll: 1,
