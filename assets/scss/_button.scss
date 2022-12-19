@@ -1,33 +1,28 @@
-.theme-btn{
+.theme-rounded-btn {
+    display: block;
+    text-decoration: none;
     border: none;
-    background:transparent;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    padding: 28px 67px;
+    background-color: #00CCFF;
+    border-radius: 355px;
+    box-shadow: 0px 0px 60px 0px rgba(0, 204, 255, 0.5);
+}
+
+.theme-btn-rounded {
     display: inline-block;
     text-decoration: none;
+    border: none;
     text-transform: capitalize;
-    font-size: 18px;
-    line-height: 27px;
-    border-radius: 10px;
-    transition: all ease-in-out 0.3s;
-    text-transform: capitalize;
-}
-.theme-btn-bordered{
-    border: 1px solid #000E28;
-    color: #000000;
-    padding: 13px 30px;
-    box-shadow: 2px 2px 2px 3px #000000;
-    &:hover{
-        background: #000000;
-        color: #fff;
-    }
-}
-.theme-shadow-btn{
-    border: 1px solid #000000;
-    border-radius: 10px;
-    padding: 20px 58px;
-    color: #000000;
-    box-shadow: 2px 3px 8px #000000;
-    &:hover{
-        background:#000000;
-        color: #fff;
-    }
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 204, 255, 1);
+    padding: 28px 46px;
+    border-radius: 60px;
 }

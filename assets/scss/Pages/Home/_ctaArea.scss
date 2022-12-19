@@ -1,0 +1,73 @@
+#ctaArea {
+    .section-subheading {
+        padding: 0px 230px;
+
+        p {
+            font-size: 26px;
+            line-height: 36px;
+            color: rgba(0, 14, 40, 0.8);
+        }
+    }
+
+    .content-circle {
+        text-align: center;
+
+        .circle-inner {
+            height: 350px;
+            width: 350px;
+            border-radius: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 60px;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 36px;
+                color: rgba(0, 14, 40, 0.8);
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .circle-wrapper {
+        .col {
+            &:nth-child(1) .circle-inner {
+                background-color: #E5E5FF;
+                box-shadow: 2px 3px 0px 0px #0000FF;
+
+                h2 {
+                    color: rgba(0, 0, 255, 1);
+                }
+            }
+
+            &:nth-child(2) {
+                .circle-inner {
+                    background-color: #E5FAFF;
+                    box-shadow: -2px -3px 0px 0px #00CCFF;
+
+                    h2 {
+                        color: rgba(0, 204, 255, 1);
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .circle-inner {
+                    background-color: #FDF4DA;
+                    box-shadow: 2px 3px 0px 0px #FFD964;
+
+                    h2 {
+                        color: rgba(250, 188, 0, 1);
+                    }
+                }
+            }
+        }
+    }
+}

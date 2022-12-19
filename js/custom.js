@@ -94,7 +94,14 @@ let SwiperBottom = new Swiper('.brands-slider-area', {
 
 });
 
+var swiper = new Swiper(".successSliderActive", {
+    effect: "fade",
 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);

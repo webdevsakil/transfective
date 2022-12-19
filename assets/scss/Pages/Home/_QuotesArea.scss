@@ -1,0 +1,23 @@
+#quotes-area{
+    padding-top: 120px;
+    padding-bottom: 150px;
+    position: relative;
+    .left-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .right-img{
+        position: absolute;
+        right: 60px;
+        top: 60px;
+    }
+    .content-area{
+        p{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 62px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
