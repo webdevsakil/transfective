@@ -14,7 +14,9 @@ mr: margin-right
 mb: margin-bottom
 
 */
-
+.pt-150{
+  padding-top: 150px;
+}
 .mt-5 {
   margin-top: 5px;
 }

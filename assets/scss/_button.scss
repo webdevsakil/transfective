@@ -1,4 +1,4 @@
-.theme-rounded-btn {
+.theme-rounded-shadow-btn {
     display: block;
     text-decoration: none;
     border: none;
@@ -25,4 +25,12 @@
     background-color: rgba(0, 204, 255, 1);
     padding: 28px 46px;
     border-radius: 60px;
+}
+
+@media screen and (max-width:480px) {
+    .theme-rounded-shadow-btn {
+            font-size: 16px;
+            padding: 18px 46px;
+            box-shadow: 0px 0px 40px 0px rgba(0, 204, 255, 0.5);
+        }
 }
