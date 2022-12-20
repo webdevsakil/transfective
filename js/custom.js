@@ -1,45 +1,6 @@
 
 
-const technolgySliderWrapper = document.querySelector('.technolgy-slider-wrapper');
-
-var technolgySlider = new Swiper(technolgySliderWrapper, {
-    spaceBetween: 0,
-    slidesPerView: 5,
-    centeredSlides: true,
-    roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 30,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    
-    breakpoints: {
-        100: {
-            slidesPerView: 1,
-        },
-        400: {
-            slidesPerView: 2,
-        },
-        600: {
-            slidesPerView: 3,
-        },
-
-        800: {
-            slidesPerView: 4,
-        },
-        1000: {
-            slidesPerView: 5,
-        },
-        1400: {
-            slidesPerView: 5
-        }
-
-    }
-   
-});
-
-var technolgySlider = new Swiper(".technology-slider-two", {
+var technolgySlider = new Swiper(".technolgy-slider-wrapper", {
     spaceBetween: 20,
     slidesPerView: 5,
     centeredSlides: true,

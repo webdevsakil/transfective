@@ -25,6 +25,7 @@
     }
 }
 
+
 @media screen and (min-width:992px) and (max-width:1400px) {
     #quotes-area .left-img {
         img {
@@ -42,11 +43,14 @@
         position: absolute;
         right: 0px;
         top: 60px;
-        img{
+
+        img {
             width: 300px;
         }
     }
 }
+
+
 
 @media screen and (max-width:991px) {
     #quotes-area {

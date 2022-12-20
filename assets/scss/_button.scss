@@ -14,7 +14,8 @@
     transition: all ease 0.3s;
 
     &:hover {
-        color: #fff;
+        color: rgba(0, 0, 0, 1);
+        background-color: #fff;
     }
 }
 
@@ -33,7 +34,8 @@
     transition: all ease 0.3s;
 
     &:hover {
-        color: #fff;
+        color: rgba(0, 0, 0, 1);
+        background-color: #fff;
     }
 }
 

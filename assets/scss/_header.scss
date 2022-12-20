@@ -96,7 +96,7 @@
                 padding-left: 10px;
                 left: -20px;
                 background: rgb(255, 255, 255);
-                
+
                 border-radius: 10px;
 
                 a {
@@ -157,9 +157,10 @@
         }
 
         .logo-area {
-            img{
+            img {
                 display: none;
             }
+
             .transparent-logo {
                 display: block;
             }
@@ -553,4 +554,10 @@
         top: 13px;
     }
 
+}
+
+@media screen and (max-width:360px) {
+    .menu-area .logo-area img {
+        width: 130px;
+    }
 }
