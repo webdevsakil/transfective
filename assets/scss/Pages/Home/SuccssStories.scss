@@ -149,6 +149,14 @@
 @media screen and (max-width:480px) {
     #successStroies .success-area {
         margin-top: 0px;
+
+        .bg-img {
+            display: none;
+        }
+    }
+
+    #successStroies .success-area .slider-area .swiper-slide {
+        min-height: 530px;
     }
 
     #successStroies .success-area .slider-area {
