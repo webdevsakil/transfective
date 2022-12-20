@@ -1134,7 +1134,7 @@ footer .footer-copyright-area p {
   color: rgb(250, 188, 0);
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   #ctaArea .content-circle .circle-inner {
     height: 300px;
     width: 300px;
@@ -1394,6 +1394,14 @@ footer .footer-copyright-area p {
   color: rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  #quotes-area .right-img {
+    right: 0px;
+  }
+  #quotes-area .right-img img {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #quotes-area .left-img img {
     width: 250px;

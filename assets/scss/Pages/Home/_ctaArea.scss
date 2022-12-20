@@ -29,7 +29,8 @@
                 font-size: 60px;
                 display: flex;
                 align-items: center;
-                span:nth-child(2){
+
+                span:nth-child(2) {
                     margin-top: 7px;
                 }
             }
@@ -80,7 +81,9 @@
     }
 }
 
-@media screen and (min-width:1200px) and (max-width:1400px) {
+
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
 
     #ctaArea .content-circle .circle-inner {
         height: 300px;

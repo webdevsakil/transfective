@@ -25,7 +25,16 @@
     }
 }
 
+@media screen and (min-width:1400px) and (max-width:1700px) {
+    #quotes-area .right-img {
 
+        right: 0px;
+
+        img {
+            width: 300px;
+        }
+    }
+}
 @media screen and (min-width:992px) and (max-width:1400px) {
     #quotes-area .left-img {
         img {
