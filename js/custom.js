@@ -10,7 +10,7 @@ var technolgySlider = new Swiper(".technolgy-slider-wrapper", {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-        pauseOnMouseEnter:true
+        pauseOnMouseEnter: true
     },
     breakpoints: {
         100: {
@@ -41,11 +41,10 @@ var technolgySlider = new Swiper(".technolgy-slider-wrapper", {
 let SwiperBottom = new Swiper('.brands-slider-area', {
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 6000,
+    speed: 3000,
     autoplay: {
-        delay: 0,
-
-        reverseDirection: true
+        delay: 1,
+        reverseDirection:true
     },
     loop: true,
     loopedSlides: 4,
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             y: 100, opacity: 0, stagger: 0.1
         }
     )
-   
+
 
 })
 

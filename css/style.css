@@ -1095,6 +1095,11 @@ footer .footer-copyright-area p {
 }
 #ctaArea .content-circle .circle-inner h2 {
   font-size: 60px;
+  display: flex;
+  align-items: center;
+}
+#ctaArea .content-circle .circle-inner h2 span:nth-child(2) {
+  margin-top: 7px;
 }
 #ctaArea .content-circle .circle-inner p {
   font-weight: 700;
