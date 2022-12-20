@@ -1,23 +1,93 @@
-#quotes-area{
+#quotes-area {
     padding-top: 120px;
     padding-bottom: 150px;
     position: relative;
-    .left-img{
+
+    .left-img {
         position: absolute;
         left: 0;
         top: 0;
     }
-    .right-img{
+
+    .right-img {
         position: absolute;
         right: 60px;
         top: 60px;
     }
-    .content-area{
-        p{
+
+    .content-area {
+        p {
             font-weight: 700;
             font-size: 50px;
             line-height: 62px;
             color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1400px) {
+    #quotes-area .left-img {
+        img {
+            width: 250px;
+        }
+    }
+
+    #quotes-area .content-area p {
+        font-size: 42px;
+        line-height: 56px;
+        padding-right: 50px;
+    }
+
+    #quotes-area .right-img {
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        img{
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #quotes-area {
+        padding-top: 150px;
+        padding-bottom: 105px;
+        margin-top: -30px;
+    }
+
+    #quotes-area .right-img {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+
+        img {
+            width: 260px;
+        }
+
+    }
+
+    #quotes-area .left-img {
+        left: -50px;
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    #quotes-area .content-area {
+        p {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        text-align: center;
+    }
+
+    #quotes-area {
+        .btn-area {
+            margin-top: 40px;
         }
     }
 }
