@@ -1304,6 +1304,12 @@ footer .footer-copyright-area p {
   #successStroies .success-area {
     margin-top: 0px;
   }
+  #successStroies .success-area .bg-img {
+    display: none;
+  }
+  #successStroies .success-area {
+    margin-top: 0px;
+  }
   #successStroies .success-area .slider-area {
     padding: 0px 35px;
   }
