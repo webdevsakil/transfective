@@ -15,6 +15,7 @@ var technolgySlider = new Swiper(".technolgy-slider-wrapper", {
     breakpoints: {
         100: {
             slidesPerView: 1,
+            spaceBetween:10
         },
         400: {
             slidesPerView: 2,

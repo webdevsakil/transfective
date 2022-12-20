@@ -92,6 +92,9 @@
         line-height: 36px;
     }
 
+    #successStroies .success-area .slider-area .swiper-slide {
+        min-height: 487px;
+    }
 
 }
 
@@ -116,6 +119,10 @@
             width: 180px;
         }
     }
+
+    #successStroies .success-area .slider-area .swiper-slide {
+        min-height: 446px;
+    }
 }
 
 
@@ -128,6 +135,7 @@
         }
     }
 
+
     #successStroies .success-area {
         margin-top: 0px;
     }
@@ -138,6 +146,7 @@
 
     #successStroies .success-area .slider-area .swiper-slide {
         padding: 20px 20px;
+        min-height: 500px;
     }
 
     #successStroies .success-area .slider-area .swiper-slide .slider-desc p {

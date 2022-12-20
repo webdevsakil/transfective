@@ -871,9 +871,10 @@ footer .footer-copyright-area p {
   margin-left: 0px;
   transition: all ease 0.5s;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 370px) {
   #technology-area .technolgy-slider-wrapper .swiper-slide:hover {
     padding: 0px 0px;
+    width: 95% !important;
   }
 }
 #technology-area .technolgy-slider-wrapper .swiper-slide:hover .slide .slide-inner {
@@ -1281,6 +1282,9 @@ footer .footer-copyright-area p {
     font-size: 24px;
     line-height: 36px;
   }
+  #successStroies .success-area .slider-area .swiper-slide {
+    min-height: 487px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   #successStroies .success-area .slider-area {
@@ -1299,6 +1303,9 @@ footer .footer-copyright-area p {
   #successStroies .success-area .slider-area .swiper-slide .slider-brand img {
     width: 180px;
   }
+  #successStroies .success-area .slider-area .swiper-slide {
+    min-height: 446px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   #successStroies .success-area {
@@ -1315,6 +1322,7 @@ footer .footer-copyright-area p {
   }
   #successStroies .success-area .slider-area .swiper-slide {
     padding: 20px 20px;
+    min-height: 500px;
   }
   #successStroies .success-area .slider-area .swiper-slide .slider-desc p {
     font-size: 24px;
