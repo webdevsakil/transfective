@@ -862,6 +862,9 @@ footer .footer-copyright-area p {
 #technology-area .technolgy-slider-wrapper {
   min-height: 400px;
 }
+#technology-area .technolgy-slider-wrapper .swiper-slide {
+  cursor: pointer;
+}
 #technology-area .technolgy-slider-wrapper .swiper-slide:hover {
   width: 400px !important;
   padding: 0px 20px;
