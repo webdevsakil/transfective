@@ -1,7 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
-
 }
 
 html {
@@ -166,13 +165,16 @@ label {
 .theme-bg-blue {
   background-color: $blue;
 }
-.theme-bg-white{
+
+.theme-bg-white {
   background-color: #f5f6f6;
 }
-.theme-bg-blue-two{
+
+.theme-bg-blue-two {
   background-color: #0000FF;
 }
-.bg-footer{
+
+.bg-footer {
   background-color: #000E28;
 }
 
@@ -184,16 +186,22 @@ label {
     line-height: 52px;
   }
 }
+
 @media screen and (min-width:576px) and (max-width:768px) {
   h2 {
     font-size: 42px;
     line-height: 52px;
   }
 }
+
 @media screen and (min-width:480px) and (max-width:575px) {
   h2 {
     font-size: 36px;
     line-height: 46px;
+  }
+
+  body {
+    user-select: none;
   }
 }
 
@@ -201,6 +209,10 @@ label {
   h2 {
     font-size: 30px;
     line-height: 38px;
+  }
+
+  body {
+    user-select: none;
   }
 }
 
