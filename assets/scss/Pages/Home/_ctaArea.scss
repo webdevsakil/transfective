@@ -137,6 +137,10 @@
             line-height: 36px;
         }
     }
+
+    #ctaArea .content-circle {
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -148,9 +152,17 @@
             line-height: 36px;
         }
     }
+
+    #ctaArea .content-circle {
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width:575px) {
+    #ctaArea .content-circle {
+        margin-bottom: 25px;
+    }
+
     #ctaArea .section-subheading {
         padding: 0px 0px;
 
