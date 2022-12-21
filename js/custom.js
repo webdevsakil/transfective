@@ -42,7 +42,7 @@ var technolgySlider = new Swiper(".technolgy-slider-wrapper", {
 let SwiperBottom = new Swiper('.brands-slider-area', {
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 3000,
+    speed: 2000,
     autoplay: {
         delay: 1,
         reverseDirection:true

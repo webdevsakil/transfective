@@ -745,7 +745,7 @@ footer .footer-top-area {
 }
 footer .footer-copyright-area {
   padding-top: 23px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 footer .footer-copyright-area p {
   font-size: 16px;
@@ -1419,7 +1419,10 @@ footer .footer-copyright-area p {
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #quotes-area .left-img img {
-    width: 250px;
+    width: 200px;
+  }
+  #quotes-area .btn-area {
+    margin-left: -50px;
   }
   #quotes-area .content-area p {
     font-size: 42px;
